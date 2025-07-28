@@ -21,10 +21,10 @@ cd /your_directory && gcc -O2 -m64 -o graph_clustering cluster_degree_betweennes
 #### Directed edge list
 cd /your_directory && gcc -O2 -m64 -o graph_clustering cluster_degree_betweenness.c -DDIRECTED=true -I/c/igraph_c/include -L/c/igraph_c/lib -ligraph && ./graph_clustering /your_directory/therapies_edgelist.txt
 
-## Windows 64-bit standalone executables
+<mark>## Windows 64-bit standalone executables</mark>
 These can be executed with an input edge list in NCOL format on any Windows 64-bit system in *Command Prompt*. **Does not require igraph C package to be installed.**
 
-<mark>Will output a file (community_detection_OUTPUT.txt) of nodes, modularity values by iteration and community assignment in your_directory.</mark>
+<mark>Will output a file (community_detection_OUTPUT.txt) of nodes, modularity values by iteration and community assignments in your_directory.</mark>
 
 ### Undirected edge list
 cd C:\your_directory && NDEB_undirected.exe C:\your_directory\therapies_edgelist.txt
