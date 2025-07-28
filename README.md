@@ -27,7 +27,7 @@ These can be executed with an input edge list in NCOL format on any Windows 64-b
 <mark>Will output a file (community_detection_OUTPUT.txt) of nodes, modularity values by iteration and community assignments in *your_directory*.</mark>
 
 ### Undirected edge list
-cd C:\*your_directory* && NDEB_undirected.exe C:\*your_directory*\therapies_edgelist.txt
+cd C:\\*your_directory* && NDEB_undirected.exe C:\\*your_directory*\therapies_edgelist.txt
 
 ### Directed edge list
-cd C:\*your_directory* && NDEB_directed.exe C:\*your_directory*\therapies_edgelist.txt
+cd C:\\*your_directory* && NDEB_directed.exe C:\\*your_directory*\therapies_edgelist.txt
