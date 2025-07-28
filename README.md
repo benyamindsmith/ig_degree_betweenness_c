@@ -1,5 +1,5 @@
 # ig_degree_betweenness_c
-C implementation of the "Smith-Pittman" algorithm. Also known as the node degree+edge betweenness community detection algorithm. Written with the igraph C library. 
+C implementation of the "Smith-Pittman" algorithm. Also known as the node degree+edge betweenness community detection algorithm. Uses the igraph C library. 
 
 Why use the C implementation? Because it executes *faster*.
 
