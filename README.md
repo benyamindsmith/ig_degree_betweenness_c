@@ -3,8 +3,12 @@ C implementation of the "Smith-Pittman" algorithm. Also known as the node degree
 
 Why use the C implementation? Because it executes *faster*.
 
+R version of ig.degree.betweenness can be installed from [CRAN](https://cran.r-project.org/web/packages/ig.degree.betweenness/index.html) or [GitHub](https://github.com/benyamindsmith/ig.degree.betweenness).
+
+Python version of ig.degree.betweenness can be installed from [GitHub](https://github.com/benyamindsmith/ig_degree_betweenness_py).
+
 ## Installation
-Install igraph C following instructions at [igraph Reference Manual for using the C library](https://igraph.org/c/html/0.10.16/igraph-Installation.html)
+Install igraph C following the instructions at [igraph Reference Manual for using the C library](https://igraph.org/c/html/0.10.16/igraph-Installation.html)
 
 ## Compile and execute
 Using a compiler (recommend [GNU Compiler Collection](https://gcc.gnu.org/)), compile the *cluster_degree_betweenness.c* source code while specifying the locations of the igraph C library and header files. Run the compiled graph clustering executable on an input edge list in [NCOL](https://igraph.org/c/html/0.9.7/igraph-Foreign.html) format (see *therapies_edgelist.txt*) to obtain output of the node degree+edge betweenness community detection algorithm. 
