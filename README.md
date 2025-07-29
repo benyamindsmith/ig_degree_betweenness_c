@@ -7,6 +7,8 @@ Why use the C implementation? Because it executes *faster*.
 Install igraph C following instructions at [igraph Reference Manual for using the C library](https://igraph.org/c/html/0.10.16/igraph-Installation.html)
 
 ## Compile and execute
+Using a compiler (recommend [GNU Compiler Collection](https://gcc.gnu.org/)), compile the *cluster_degree_betweenness.c* source code while specifying the locations of the igraph C library and header files. Run the compiled graph clustering executable on an input edge list in [NCOL](https://igraph.org/c/html/0.9.7/igraph-Foreign.html) format (see *therapies_edgelist.txt*) to obtain output of the node degree+edge betweenness community detection algorithm. 
+
 ### POSIX
 #### Undirected edge list
 cd /*your_directory* && gcc -o graph_clustering cluster_degree_betweenness.c -DDIRECTED=false -ligraph && ./graph_clustering /*your_directory*/therapies_edgelist.txt
