@@ -28,6 +28,8 @@ These can be executed with an input edge list in NCOL format on any Windows 64-b
 
 ### Undirected edge list
 cd C:\\*your_directory* && NDEB_undirected.exe C:\\*your_directory*\therapies_edgelist.txt
+<img src="src/NDEB_undirected therapies_edgelist.png" alt="Undirected edge list" width="500">
 
 ### Directed edge list
 cd C:\\*your_directory* && NDEB_directed.exe C:\\*your_directory*\therapies_edgelist.txt
+<img src="src/NDEB_directed therapies_edgelist.png" alt="Directed edge list" width="500">
