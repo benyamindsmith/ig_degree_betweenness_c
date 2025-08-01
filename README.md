@@ -1,41 +1,34 @@
 # ig_degree_betweenness_c
-C implementation of the "Smith-Pittman" algorithm. Also known as the node degree+edge betweenness community detection algorithm. Uses the igraph C library. 
+
+The C implementation of the "Smith-Pittman" algorithm. Also known as the node degree+edge betweenness community detection algorithm. Uses the igraph C library. 
 
 Why use the C implementation? Because it executes *faster*.
 
 R version of ig.degree.betweenness can be installed from [CRAN](https://cran.r-project.org/web/packages/ig.degree.betweenness/index.html) or [GitHub](https://github.com/benyamindsmith/ig.degree.betweenness).
 
-Python version of ig.degree.betweenness can be installed from [GitHub](https://github.com/benyamindsmith/ig_degree_betweenness_py).
+Python version of ig.degree.betweenness can be installed from [PyPi](https://pypi.org/project/ig-degree-betweenness/) or [GitHub](https://github.com/benyamindsmith/ig_degree_betweenness_py).
 
 ## Installation
-Install igraph C following the instructions at [igraph Reference Manual for using the C library](https://igraph.org/c/html/0.10.16/igraph-Installation.html)
 
-## Compile and execute
-Using a compiler (recommend [GNU Compiler Collection](https://gcc.gnu.org/)), compile the *cluster_degree_betweenness.c* source code while specifying the locations of the igraph C library and header files. Run the compiled graph clustering executable on an input edge list in [NCOL](https://igraph.org/c/html/0.9.7/igraph-Foreign.html) format (see *therapies_edgelist.txt*) to obtain output of the node degree+edge betweenness community detection algorithm. 
+The instructions below have been presently tested to work on Windows operating systems with the [MingW64 Command Line Interface](https://www.mingw-w64.org/) and with [CMake](https://cmake.org/download/) installed.
 
-### POSIX
-#### Undirected edge list
-cd /*your_directory* && gcc -o graph_clustering cluster_degree_betweenness.c -DDIRECTED=false -ligraph && ./graph_clustering /*your_directory*/therapies_edgelist.txt
+1. Install igraph C following the instructions at [igraph Reference Manual for using the C library](https://igraph.org/c/html/0.10.16/igraph-Installation.html)
 
-#### Directed edge list
-cd /*your_directory* && gcc -o graph_clustering cluster_degree_betweenness.c -DDIRECTED=true -ligraph && ./graph_clustering /*your_directory*/therapies_edgelist.txt
+2. Compile the code by running: 
 
-### Windows (using MSYS2 MINGW64 Shell)
-#### Undirected edge list
-cd /*your_directory* && gcc -O2 -m64 -o graph_clustering cluster_degree_betweenness.c -DDIRECTED=false -I/c/igraph_c/include -L/c/igraph_c/lib -ligraph && ./graph_clustering /*your_directory*/therapies_edgelist.txt
+```sh
+make clean
+make
+```
 
-#### Directed edge list
-cd /*your_directory* && gcc -O2 -m64 -o graph_clustering cluster_degree_betweenness.c -DDIRECTED=true -I/c/igraph_c/include -L/c/igraph_c/lib -ligraph && ./graph_clustering /*your_directory*/therapies_edgelist.txt
+## Execution
 
-## Windows 64-bit stand-alone executables
-These can be executed with an input edge list in NCOL format on any Windows 64-bit system in *Command Prompt*. **Does <ins>not</ins> require igraph C to be installed.**
+To run the compiled graph clustering executable on an input edge list in [NCOL](https://igraph.org/c/html/0.9.7/igraph-Foreign.html) format (see *therapies_edgelist.txt*) to obtain output of the node degree+edge betweenness community detection algorithm. 
 
-<mark>Will output a file (community_detection_OUTPUT.txt) of nodes, modularity values by iteration and community assignments in *your_directory*.</mark>
+The compiled code is meant to work with both directed and undirected graphs. 
 
-### Undirected edge list
-cd C:\\*your_directory* && NDEB_undirected.exe C:\\*your_directory*\therapies_edgelist.txt
-<img src="src/NDEB_undirected therapies_edgelist.png" alt="Undirected edge list" width="500">
 
-### Directed edge list
-cd C:\\*your_directory* && NDEB_directed.exe C:\\*your_directory*\therapies_edgelist.txt
-<img src="src/NDEB_directed therapies_edgelist.png" alt="Directed edge list" width="500">
+```sh
+./bin/cluster_degree_betweenness.exe  <path_to_edgelist>.txt
+```
+
