@@ -27,8 +27,14 @@ To run the compiled graph clustering executable on an input edge list in [NCOL](
 
 The compiled code is meant to work with both directed and undirected graphs. 
 
+## Undirected Graphs
 
 ```sh
 ./bin/cluster_degree_betweenness.exe  <path_to_edgelist>.txt
 ```
 
+## Directed Graphs
+
+```sh
+./bin/cluster_degree_betweenness.exe -directed <path_to_edgelist>.txt
+```
