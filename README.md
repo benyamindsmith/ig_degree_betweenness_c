@@ -32,9 +32,14 @@ The compiled code is meant to work with both directed and undirected graphs.
 ```sh
 ./bin/cluster_degree_betweenness.exe  <path_to_edgelist>.txt
 ```
+### Output
+
+![](./utils/NDEB_undirected%20therapies_edgelist.png)
+
 
 ## Directed Graphs
 
 ```sh
 ./bin/cluster_degree_betweenness.exe -directed <path_to_edgelist>.txt
 ```
+![](./utils/NDEB_directed%20therapies_edgelist.png)
