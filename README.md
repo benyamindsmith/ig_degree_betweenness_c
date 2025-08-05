@@ -23,7 +23,7 @@ make
 
 ## Execution
 
-To run the compiled graph clustering executable on an input edge list in [NCOL](https://igraph.org/c/html/0.9.7/igraph-Foreign.html) format (see *therapies_edgelist.txt*) to obtain output of the node degree+edge betweenness community detection algorithm. 
+To run the compiled graph clustering executable on an input edge list in [NCOL](https://igraph.org/c/html/0.9.7/igraph-Foreign.html) format (see simulated dataset of *therapies_edgelist.txt*) to obtain output of the node degree+edge betweenness community detection algorithm. 
 
 The compiled code is meant to work with both directed and undirected graphs. 
 
@@ -43,3 +43,4 @@ The compiled code is meant to work with both directed and undirected graphs.
 ./bin/cluster_degree_betweenness.exe -directed <path_to_edgelist>.txt
 ```
 ![](./utils/NDEB_directed%20therapies_edgelist.png)
+
