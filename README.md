@@ -45,3 +45,24 @@ The compiled code is meant to work with both directed and undirected graphs.
 ![](./utils/NDEB_directed%20therapies_edgelist.png)
 
 
+# Citation
+
+To cite package ‘ig.degree.betweenness’ in publications use:
+
+>  Smith, Pittman, and Xu (2024). Centrality in Collaboration: A Novel Algorithm for Social
+  Partitioning Gradients in Community Detection for Multiple Oncology Clinical Trial Enrollments
+  arXiv:2411.01394.
+
+A BibTeX entry for LaTeX users is
+
+```
+@Misc{Smith_Pittman_Xu_2024,
+    title = {Centrality in Collaboration: A Novel Algorithm for Social Partitioning Gradients in Community Detection for Multiple Oncology Clinical Trial Enrollments},
+    author = {Benjamin Smith and Tyler Pittman and Wei Xu},
+    year = {2024},
+    month = {Nov},
+    note = {arXiv:2411.01394},
+    url = {https://arxiv.org/abs/2411.01394},
+  }
+
+```
