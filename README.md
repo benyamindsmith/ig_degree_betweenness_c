@@ -53,6 +53,7 @@ To cite package ‘ig.degree.betweenness’ in publications use:
   Collaboration: community detection for oncology
   researchers.” _University of Toronto Journal of Public
   Health_, *5*(1). doi:10.33137/utjph.v5i1.44130
+> 
 > Smith B, Pittman T, Xu W (2026). “Detecting
   communities when order and direction matter in social
   network analysis.” _Canadian Journal of Statistics_,
