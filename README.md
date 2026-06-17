@@ -1,5 +1,9 @@
 # ig_degree_betweenness_c
 
+[![arXiv](https://img.shields.io/badge/arXiv-2411.01394-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2411.01394)
+[![UTJPH](https://img.shields.io/badge/UTJPH-10.33137%2Futjph.v5i1.44130-1f618d)](https://doi.org/10.33137/utjph.v5i1.44130)
+[![CJS](https://img.shields.io/badge/CJS-10.1002%2Fcjs.70060-991915)](https://doi.org/10.1002/cjs.70060)
+
 The C implementation of the "Smith-Pittman" algorithm. Also known as the node degree+edge betweenness community detection algorithm. Uses the igraph C library. 
 
 Why use the C implementation? Because it executes *faster*.
